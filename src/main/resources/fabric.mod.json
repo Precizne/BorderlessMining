@@ -3,8 +3,8 @@
   "id": "borderlessmining",
   "version": "${version}",
 
-  "name": "Borderless Mining",
-  "description": "Adds a windowed borderless (fullscreen) option",
+  "name": "Borderless Mining (GLFW)",
+  "description": "Adds a windowed borderless (fullscreen) option with GLFW test",
   "authors": [
     "comp500"
   ],
@@ -21,6 +21,9 @@
   "entrypoints": {
     "modmenu" : [
       "link.infra.borderlessmining.config.ModMenuCompat"
+    ],
+    "preLaunch": [
+      "link.infra.borderlessmining.GLFWReplace"
     ]
   },
   "mixins": [
